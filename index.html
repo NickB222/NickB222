@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tode List</title>
+    <!--StyleSheet Einbindung-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="init()">
+    <!-- Headbar -->
+    <section class="hero-section">
+        <div class="headbar">
+            <h1>Todo Liste</h1>
+            <img src="img/Blaues-Plus.png" alt="add" onclick="showAddTodoPopup()">
+        </div>
+        <!-- Todos -->
+        <div class="todos" id="todos">
+        </div>
+    </section>
+    <!-- add Todo Popup -->
+    <section class="add-todo-popup-container dp-none" id="popupContainer">
+        <div class="add-todo-popup-box">
+            <h2>Neue Todo</h2>
+            <input id="addHeadline" type="text" placeholder="Überschrift">
+            <textarea id="addText" placeholder="text"></textarea>
+                <div class="add-todo-popup-img">
+                    <img src="img/Red-Minus.png" alt="" onclick="closeAddTodoPopup()">
+                    <img src="img/Blaues-Plus.png" alt="" onclick="addTodoToTodos()">
+                </div>
+        </div>
+    </section>
+
+    <!--Main JS Einbindung-->
+    <script src="main.js" defer></script>
+</body>
+
+</html>

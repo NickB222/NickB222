@@ -1,0 +1,119 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: rgb(170, 170, 170);
+}
+.headbar {
+    height: 100px;
+    background-color: black;
+    box-shadow: 0px 10px 5px 5px #5C5C5C;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+.headbar h1 {
+    color: white;
+    font-size: 56px;
+}
+.headbar img {
+    height: 75px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.headbar img:hover {
+    height: 85px;
+    object-fit: cover;
+}
+.add-todo-popup-container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.add-todo-popup-box {
+    background-color: darkcyan;
+    height: 800px;
+    width: 400px;
+    border: 5px solid gray;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+}
+.add-todo-popup-img {
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
+    gap: 200px;
+    align-items: center;
+    width: 400px;
+    margin: 10px 0px;
+}
+.add-todo-popup-img img {
+    height: 75px;
+    object-fit: cover;
+}
+.add-todo-popup-box h2 {
+    font-size: 36px;
+    text-align: center;
+    padding: 20px 0px;
+}
+.add-todo-popup-box input {
+    height: 40px;
+    font-size: 24px;
+    margin: 20px 10px;
+}
+.add-todo-popup-box input::placeholder {
+    color: black;
+}
+.add-todo-popup-box textarea {
+    height: 500px;
+    font-size: 20px;
+    margin: 20px 10px;
+}
+.add-todo-popup-box textarea::placeholder {
+    color: black;
+}
+.dp-none {
+    display: none;
+}
+.todos {
+    padding: 20px 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(6, 1fr);
+}
+.todo-card {
+    background-color: aqua;
+    color: black;
+    border: 5px solid black;
+    border-radius: 10px;
+    width: 250px;
+    height: 400px;
+    padding: 5px 5px;
+}
+.todo-card h2 {
+    height: 40px;
+    font-size: 32px;
+}
+.todo-card p {
+    height: 280px;
+    font-size: 20px;
+}
+.todo-card-img {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 75px;
+}
+.todo-card-img img {
+    height: 75px;
+}
